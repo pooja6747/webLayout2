@@ -55,6 +55,7 @@ header h3 {
     display: inline-block;
     font-weight: 600;
 }
+
 /* bottomhead haeder end */
 
 /* section start */
@@ -63,26 +64,47 @@ section {
     padding: 0px 100px;
 }
 
-section main{
+section main {
     width: 80%;
     float: left;
     padding-top: 20px;
 }
 
-section aside{
+section aside {
     width: 20%;
     float: right;
     background: #b9dbbe;
     padding: 20px 15px;
 }
 
-aside ul li{
+aside ul li {
     font-weight: 300;
     list-style: none;
 }
 
-aside h3{
+aside h3 {
     margin: 5px;
+}
+
+main .para .para1 p {
+    margin-left: 30px;
+}
+
+main .para .para1::before {
+    content: "";
+    width: 0px;
+    height: 8%;
+    position: absolute;
+    border: 3px solid green;
+    top: 315px;
+    left: 120px;
+}
+
+
+main a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
 }
 /* main section end */
 
@@ -110,6 +132,14 @@ footer .copy {
     float: right;
     text-align: right;
 }
+
+.links p a,
+.fllow p a,
+.copy p a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* footer end */
 
 @media screen and (max-width:992px) {
@@ -122,30 +152,46 @@ footer .copy {
         display: block;
     }
 
-    header{
+    header {
         padding: 10px;
     }
 
+    footer {
+        height: auto;
+    }
+
+    footer h3 {
+        margin: 5px;
+    }
+    main .para .para1::before {
+        border: none;
+    }
 }
 
-@media screen and (max-width:575px){
-    header h1, header h3{
+@media screen and (max-width:575px) {
+
+    header h1,
+    header h3 {
         display: block;
         text-align: center;
     }
 }
 
 @media screen and (max-width:767px) {
-    section{
+    section {
         padding: 0px;
     }
-    section main, section aside{
+
+    section main,
+    section aside {
         float: none;
         width: 100%;
         padding: 10px;
     }
 
-    footer .links, footer .fllow, footer .copy{
+    footer .links,
+    footer .fllow,
+    footer .copy {
         float: none;
         width: 100%;
         text-align: center;
