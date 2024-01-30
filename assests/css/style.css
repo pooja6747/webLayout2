@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+tophead section start */
+.tophead {
+    width: 100%;
+    background: rgb(3, 59, 3);
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.tophead ul li {
+    color: #fff;
+    margin: 0px 3px;
+    display: inline-block;
+}
+
+.tophead ul li a {
+    color: #fff;
+}
+
+/* .tophead section end */
+
+/* header start */
+header {
+    padding: 20px 40px;
+    display: flex;
+    background: rgb(54, 123, 54);
+    color: #fff;
+}
+
+header h3 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* header end */
+
+/* bottom header start */
+.bottomhead {
+    background: rgb(59, 193, 59);
+    padding-left: 40px;
+}
+
+.bottomhead ul li {
+    margin: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 600;
+}
+/* bottomhead haeder end */
+
+/* section start */
+section {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+section main{
+    width: 80%;
+    float: left;
+    padding-top: 20px;
+}
+
+section aside{
+    width: 20%;
+    float: right;
+    background: #b9dbbe;
+    padding: 20px 15px;
+}
+
+aside ul li{
+    font-weight: 300;
+    list-style: none;
+}
+
+aside h3{
+    margin: 5px;
+}
+/* main section end */
+
+/* footer start */
+footer {
+    height: 100px;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgb(7, 120, 7);
+    color: #fff;
+}
+
+footer .links {
+    width: 33%;
+    float: left;
+}
+
+footer .fllow {
+    width: 33%;
+    float: left;
+}
+
+footer .copy {
+    width: 34%;
+    float: right;
+    text-align: right;
+}
+/* footer end */
+
+@media screen and (max-width:992px) {
+    .tophead {
+        padding: 10px;
+        height: auto;
+    }
+
+    .tophead ul li {
+        display: block;
+    }
+
+    header{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:575px){
+    header h1, header h3{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    section{
+        padding: 0px;
+    }
+    section main, section aside{
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer .links, footer .fllow, footer .copy{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
